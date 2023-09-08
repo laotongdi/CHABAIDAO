@@ -1,0 +1,12 @@
+/* components/mydd/mydd.wxss */
+.qy {
+    width: 100%;
+    height: 81%;
+    background-color: rgb(243, 243, 243);
+}
+.mss {
+    display: block;
+    margin: 360rpx auto 60rpx;
+    width: 200rpx;
+    height: 200rpx;
+}

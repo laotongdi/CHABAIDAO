@@ -1,0 +1,39 @@
+<!--pages/wd/wd.wxml-->
+<view class="top">
+    <image class="bj" src="/images/bj.jpeg" mode="" />
+    <view class="topn">
+        <view>
+            <view class="tntop">
+                <image class="tx" src="/images/toux.webp" mode="" />
+                <view class="hy">HI 欢迎新朋友~</view>
+                <view class="anwk">
+                    <view class="an">注册/登录</view>
+                </view>
+            </view>
+            <view class="tnbom">
+                <view>茶百道会员，全新升级</view>
+                <view>超多权益解锁中</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view>
+    <view class="banner">
+        <view class="hyfw">
+            会员服务
+        </view>
+        <view class="gneng">
+            <view wx:for="{{list}}" wx:key="id">
+                <image src="{{item.src}}" mode=""/>
+                <view>{{item.title}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="lbt">
+        <swiper>
+        <swiper-item>
+            <image src="/images/lllb.jpg" mode=""/>
+        </swiper-item>
+    </swiper>
+    </view>
+</view>

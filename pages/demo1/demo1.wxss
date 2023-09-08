@@ -1,0 +1,231 @@
+/* pages/demo1/demo1.wxss */
+page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fh {
+  position: fixed;
+  border-radius: 50%;
+  top: 54rpx;
+  left: 35rpx;
+  width: 60rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  padding: 10rpx 0 10rpx 20rpx;
+  background-color: #bebebe;
+  z-index: 999;
+}
+
+.fx {
+  position: fixed;
+  border-radius: 50%;
+  z-index: 999;
+  top: 54rpx;
+  left: 130rpx;
+  width: 60rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  padding: 5rpx 10rpx 5rpx 16rpx;
+  background-color: #bebebe;
+}
+
+.fh image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fx image {
+  width: 100%;
+  height: 100%;
+}
+
+.tou {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+  line-height: 60rpx;
+  padding: 53rpx 0 16rpx 210rpx;
+  z-index: 998;
+  opacity: 0;
+}
+.cp {
+  margin-top: 40rpx;
+  width: 100%;
+  height: 580rpx;
+}
+
+.xiansi {
+  animation-name: xiangshi;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+@keyframes xiangshi {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*  */
+scroll-view {
+  height: 83.2%;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.nr {
+  padding: 30rpx;
+}
+.nr .bt {
+  font-size: 40rpx;
+}
+.nr .bqt {
+  font-size: 24rpx;
+  margin: 25rpx 0 20rpx;
+}
+.nr .bqt .bq {
+  position: relative;
+  width: 18rpx;
+  height: 18rpx;
+  padding-top: 5rpx;
+  display: inline-block;
+}
+.nr .ls {
+  margin-left: 10rpx;
+  color: rgb(17, 17, 143);
+}
+.nr .js {
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+.nr .ts {
+  margin-top: 40rpx;
+  font-size: 24rpx;
+}
+.nr .ts view:nth-child(1) {
+  color: rgb(134, 130, 130);
+  margin-bottom: 20rpx;
+}
+.nr .ts view:nth-child(2) {
+  color: rgb(117, 110, 110);
+  margin-bottom: 20rpx;
+}
+.nr .xuanx {
+  font-size: 30rpx;
+}
+.nr .xuanx .xxk {
+  display: flex;
+  margin: 20rpx 0 30rpx 0;
+}
+.nr .xuanx .xxk view {
+  margin-right: 20rpx;
+  padding: 10rpx 58rpx;
+  border-radius: 50rpx;
+  background-color: rgb(235, 235, 235);
+}
+.nr .xuanx .xxk view.xuanz{
+  color: #fff;
+  background-color: rgb(76, 76, 206);
+}
+.nr .xuanx .xyd view {
+  padding: 10rpx 20rpx;
+}
+.nr .xuanx .xyd .nbd {
+  padding: 10rpx 40rpx;
+}
+/*  */
+.buttom {
+  height: 250rpx;
+  box-sizing: border-box;
+  background-color: rgb(252, 252, 252);
+  padding: 20rpx;
+}
+.buttom .dis {
+  display: flex;
+}
+.buttom .dis view:nth-child(1){
+  flex: 1;
+}
+.buttom .dis .qian {
+  font-weight: 600;
+}
+.buttom .dis .da {
+  font-size: 40rpx;
+}
+.buttom .dis .leixing {
+  color: #777171;
+  font-size: 24rpx;
+}
+.buttom .dis .leixing view {
+  width: 60%;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow:ellipsis;
+}
+.buttom .jrgwc {
+  color: #fff;
+  margin: 20rpx auto 0;
+  width: 100%;
+  line-height: 2.5;
+  text-align: center;
+  border-radius: 40rpx;
+  background-color: rgb(145, 145, 145);
+}
+.buttom .jrgwc {
+  background-color: rgb(69, 69, 187);
+}
+.buttom .dis text {
+  display: inline-block;
+  width: 40rpx;
+  text-align: center;
+}
+.buttom .dis .jian {
+  border-radius: 50%;
+  border: 2rpx solid rgb(145, 145, 145);
+  margin-right: 10rpx;
+}
+.buttom .dis .jia {
+  border-radius: 50%;
+  color: #fff;
+  border: 2rpx solid rgb(73, 73, 236);
+  background-color: rgb(73, 73, 236);
+  margin-left: 10rpx;
+}
+
+.tuij {
+  position: absolute;
+  left: 100rpx;
+  top: 1435rpx;
+  display: block;
+  padding: 8rpx 12rpx;
+  height: 23rpx;
+  border-radius: 20rpx 20rpx 20rpx 0;
+  background-color: rgb(214, 206, 120);
+  font-size: 18rpx;
+}
+.bktz {
+  position: absolute;
+  left: 120rpx;
+  top: 1585rpx;
+  display: block;
+  padding: 8rpx 12rpx;
+  height: 23rpx;
+  border-radius: 20rpx 20rpx 20rpx 0;
+  background-color: rgb(214, 206, 120);
+  font-size: 18rpx;
+}
+
+.nr .xuanx .xyd .wfxz {
+  color: #a7a2a2;
+  background-color: rgb(245 245 245);
+}

@@ -1,0 +1,230 @@
+<!--pages/demo/demo.wxml-->
+<view class="top">
+  <view class="left">
+    <view class="checked">自取</view>
+    <view bindtap="mod">外卖</view>
+  </view>
+  <view class="right">
+    <view>
+      <image src="/images/sous.png" mode="" />
+    </view>
+  </view>
+</view>
+<view class="dz">
+  <view class="dzz">
+    <view>郴州湘南学院店
+      <image src="/images/youjian_hei.png" mode="" />
+    </view>
+    <view>距离您1.51km</view>
+  </view>
+  <view class="dzy">
+    <image src="/images/yqh.jpg" mode="" />
+    <view>一起喝</view>
+  </view>
+</view>
+<view class="jtdz">
+  湖南省郴州市苏仙区湘南学院湘京C栋10号
+  <image src="/images/youjian.png" mode="" />
+</view>
+
+<view class="scrollh">
+  <scroll-view class="scroll_1"	scroll-top="{{top}}" scroll-y="true" scroll-with-animation>
+    <view wx:for="{{list}}" wx:key="id" class="{{baise == item.id ? 'baise': ''}}" data-id="{{item.id}}" bindtap="dianji">
+      <image src="{{item.src}}" mode="" />{{item.title}}
+    </view>
+    <view class="chengchangzi"></view>
+  </scroll-view>
+
+  <scroll-view class="scroll_2" scroll-top="{{top1}}" scroll-with-animation scroll-y="true" bindscroll="yidong">
+    <view class="naicha">
+      <view class="bt">东魁杨梅</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_1}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">牧场酸奶</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_2}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">大凉山桑葚</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_1}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">古法酒酿</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_2}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">找鲜果</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_1}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">找奶茶</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_2}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">柠檬茶</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_1}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">冷萃茶</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_2}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">加料</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_1}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="naicha">
+      <view class="bt">保温袋</view>
+      <view class="nr" bindtap="goto" wx:for="{{naicha_2}}" wx:key="id">
+        <image class="cp" src="{{item.src}}" mode="" />
+        <view>
+          <view class="xbt">{{item.bt}}</view>
+          <view class="bqt">
+            <image class="bq" src="/images/标签1.png" mode="" /> 杨梅 | <text class="ls">啵啵</text>
+          </view>
+          <view class="xxbt">杉泽《观山海》联名款</view>
+          <view class="jg">
+            <view>￥<text class="dahao">{{item.jg}}</text><text class="xiaohao"> 起</text></view>
+            <view>
+              <text>选规格</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

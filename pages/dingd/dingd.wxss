@@ -1,0 +1,67 @@
+/* pages/dingd/dingd.wxss */
+page{
+    height: 100%;
+}
+.top {
+    padding: 60rpx 0 28rpx 30rpx;
+    border-bottom: 3rpx solid rgb(224, 220, 220);
+}
+
+.xxk {
+    display: flex;
+}
+
+.xxk view {
+    flex: 1;
+    text-align: center;
+}
+
+.xxk>view>view {
+    margin: 0 auto;
+    width: 130rpx;
+    padding: 30rpx 0;
+    /* 设置relative,作为伪类::after定位的参照和width的参照基准 */
+    position: relative;
+}
+
+.xxk>view>view .mybefore,
+.xxk>view>view .myafter {
+    /* 将开始的宽度设置为0,这样才会展示出过渡效果 */
+    width: 0;
+    height: 4rpx;
+    background-color: #12379c;
+    /* 设置原本定位 */
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    /* 设置过渡效果 */
+    transition: all 0.4s;
+}
+.xxk>view>view .xiangzuo {
+    /* 实现向左展开效果 */
+    /* 鼠标移入改变宽度 */
+    width: 50%;
+    /* 鼠标移入改变定位位置 */
+    left: 0;
+}
+.xxk>view>view .xiangyou{
+    width: 50%;
+}
+
+/*  */
+.qy {
+    width: 100%;
+    height: 81%;
+    background-color: rgb(252, 252, 252);
+}
+
+swiper-item {
+    text-align: center;
+    font-size: 30rpx;
+}
+.cbt {
+    margin: 0 0 30rpx;
+}
+.cnr {
+    color: rgb(129, 129, 129);
+}

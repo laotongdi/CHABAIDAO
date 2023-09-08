@@ -1,0 +1,29 @@
+<!--pages/dingd/dingd.wxml-->
+<view class="top">
+    我的订单
+</view>
+<view class="xxk">
+    <view bindtap="swip" id="0">
+        <view>
+            <view class="{{myid==0?'xiangzuo mybefore':'mybefore'}}"></view>茶饮订单<view class="{{myid==0?'xiangyou myafter':'myafter'}}"></view>
+        </view>
+    </view>
+    <view bindtap="swip" id="1">
+        <view>
+            <view class="{{myid==1?'xiangzuo mybefore':'mybefore'}}"></view>卡券订单<view class="{{myid==1?'xiangyou myafter':'myafter'}}"></view>
+        </view>
+    </view>
+</view>
+<swiper class="qy" current="{{myid}}" bindchange="lb">
+    <swiper-item>
+        <mydd>
+            <view class="cbt" slot="before">暂无历史订单</view>
+            <view class="cnr" slot="hou">快去选择一杯喜欢的饮品吧~</view>
+        </mydd>
+    </swiper-item>
+    <swiper-item>
+        <mydd>
+            <view class="cbt" slot="before">您还没有卡券订单哦~</view>
+        </mydd>
+    </swiper-item>
+</swiper>

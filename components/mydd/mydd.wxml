@@ -1,0 +1,6 @@
+<!--components/mydd/mydd.wxml-->
+<view class="contaner">
+    <image class="mss" src="/images/查看订单.png" mode=""/>
+    <slot name="before"></slot>
+    <slot name="hou"></slot>
+</view>

@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true">
+<image class="em" src="/images/em.jfif" mode="" />
+<swiper>
+  <swiper-item>
+    <image class="bg" src="/images/bg.png" mode="" />
+  </swiper-item>
+</swiper>
+<!--  -->
+<view class="dl">
+  <view class="dlzuo">
+    <view>HI欢迎新朋友
+      <image class="jt" src="/images/youjian.png" mode="" />
+    </view>
+    <view>入会立享8元礼包</view>
+  </view>
+  <view class="dlyou">
+    <view class="an">注册/登录</view>
+  </view>
+</view>
+<!--  -->
+<view class="gmfs">
+  <view class="left" bindtap="edit">
+  <image src="/images/zq.jpg" mode=""/>
+    到店自取
+  </view>
+  <view class="right" bindtap="mod">
+  <image src="/images/wm.jpg" mode=""/>
+    外卖配送
+  </view>
+</view>
+<!--  -->
+<view class="sggn">
+  <view wx:for="{{list}}" wx:key="id">
+    <image src="{{item.src}}" mode=""/>
+    <view>{{item.text}}</view>
+  </view>
+</view>
+
+<view class="rq">
+  <view class="dak">会员新鲜事</view>
+  <scroll-view scroll-x="true">
+    <view wx:for="{{list1}}" wx:key="id">
+      <image src="{{item.src}}" mode=""/>
+    </view>
+  </scroll-view>
+</view>
+</scroll-view>

@@ -1,0 +1,76 @@
+<!--pages/demo1/demo1.wxml-->
+<view>
+  <view class="fh">
+    <image bindtap="go" src="/images/返回箭头.png" mode="" />
+  </view>
+  <view class="fx">
+    <image src="/images/分享.png" mode="" />
+  </view>
+  <view class="{{flag==1?'tou xiansi':'tou'}}">
+    杨梅啵啵冰
+  </view>
+</view>
+
+<scroll-view scroll-y="true" bindscroll="gundong">
+  <view>
+    <image class="cp" src="/images/ymbbs.jpg" mode="" />
+  </view>
+  <view class="nr">
+    <view class="bt">杨梅啵啵冰</view>
+    <view class="bqt">
+      <image class="bq" src="/images/标签1.png" mode="" /> <text class="ls">杨梅</text> | 啵啵
+    </view>
+    <view class="js">
+      自然酸甜，梅味十足！肉厚多汁的应季杨梅与Q弹有嚼劲的脆啵啵组合，交织出层次分明的咀嚼感，搭配花香高扬，鲜灵持久的龙芽茉绿茶底，喝下去唇齿间酸甜流动，清新沁爽，每一口都是来自山野的味道！杯型容量：冷饮中杯500ml，大杯700ml
+    </view>
+    <view class="ts">
+      <view>【饮料小贴士】</view>
+      <view>*边嚼边喝，风味更佳</view>
+    </view>
+    <view class="xuanx">
+      <view class="xxx">规格</view>
+      <view class="xxk">
+        <view data-jg="{{15}}" data-lx="中杯" id="1" bindtap="gg" class="{{gg==1?'xuanz':''}}">中杯</view>
+        <view data-jg="{{19}}" data-lx="大杯" id="2" bindtap="gg" class="{{gg==2?'xuanz':''}}">大杯</view>
+      </view>
+      <view class="xxx">换糖</view>
+      <view class="xxk xyd">
+        <view wx:if="{{td!=4}}" data-jg="{{1}}" data-lx="0卡糖" class="{{ht==true?'xuanz':''}}" bindtap="ht">0卡糖 ￥1</view>
+        <view wx:else data-jg="1" class="wfxz" bindtap="ts">0卡糖 ￥1</view>
+      </view>
+      <view class="xxx">甜度</view>
+      <view class="xxk xyd">
+        <text class="tuij">推荐</text>
+        <view id="3" bindtap="td" data-lxx="5分糖" class="{{td==3?'xuanz nbd':'nbd'}}">5分糖</view>
+        <view wx:if="{{ht!=true}}" id="4" data-lxx="去糖（不额外加糖）" bindtap="td" class="{{td==4?'xuanz':''}}">去糖(不额外加糖)</view>
+        <view wx:else id="4" class="wfxz" bindtap="ts">去糖(不额外加糖)</view>
+        <view id="5" bindtap="td" data-lxx="全糖" class="{{td==5?'xuanz nbd':'nbd'}}">全糖</view>
+      </view>
+      <view class="xxx">温度</view>
+      <view class="xxk">
+
+        <view class="xuanz">正常冰</view><text class="bktz">不可调整</text>
+      </view>
+      <view class="xxx">包装</view>
+      <view class="xxk xyd">
+        <view data-jg="{{1}}" data-lx="单杯保温袋" id="6" bindtap="bz" class="{{bz==6?'xuanz':''}}">单杯保温袋￥1</view>
+        <view data-jg="{{1.5}}" data-lx="双杯保温袋" id="7" bindtap="bz" class="{{bz==7?'xuanz':''}}">双杯保温袋￥1.5</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="buttom">
+  <view class="dis">
+    <view>
+      <view class="qian">￥<text class="da">{{jiage}}</text></view>
+      <view class="leixing"><view>{{xinxi}}</view></view>
+    </view>
+    <view>
+      <text class="jian" bindtap="jian">―</text>
+      {{shuli}}
+      <text class="jia" bindtap="jia">+</text>
+    </view>
+  </view>
+  <view class="jrgwc">加入购物车</view>
+</view>

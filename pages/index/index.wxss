@@ -1,0 +1,144 @@
+page {
+    background-color: rgb(216, 218, 204);
+    height: 100%;
+}
+swiper {
+  height: 600rpx;
+}
+
+
+.em {
+  position: fixed;
+  top: 60rpx;
+  left: 40rpx;
+  width: 70rpx;
+  height: 70rpx;
+  z-index: 9999;
+}
+.bg{
+  width: 100%;
+  height: 600rpx;
+}
+.top image {
+  height: 100%;
+}
+.dl {
+  display: flex;
+  position: relative;
+  top: -90rpx;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 40rpx;
+  background-color:rgba(255,255,255,.6);
+}
+.dl .jt {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: text-bottom;
+}
+.dl .dlzuo {
+  font-size: 35rpx;
+}
+.dl .dlyou {
+  flex: 1;
+}
+.dl .dlzuo view:nth-child(2) {
+  font-size: 25rpx;
+  color: rgb(18, 6, 179);
+}
+
+.dl .an {
+  float: right;
+  width: 100rpx;
+  color: rgb(18, 6, 179);
+  border: 2rpx solid rgb(18, 6, 179);
+  text-align: center;
+  border-radius: 40rpx;
+  line-height: 50rpx;
+  padding: 0 40rpx;
+  font-weight: 300;
+  font-size: 20rpx;
+}
+
+.gmfs {
+  position: relative;
+  top: -100rpx;
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.gmfs view {
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+  width: 48%;
+  line-height: 40rpx;
+  border-radius: 30rpx;
+  padding: 20rpx 0 30rpx;
+  font-weight: 800;
+}
+.gmfs view image {
+  width: 140rpx;
+  height: 140rpx;
+  display: block;
+  margin: 0 auto 10rpx;
+}
+
+/*  */
+.sggn {
+  position: relative;
+  top: -145rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30rpx;
+  overflow: hidden;
+  padding: 30rpx;
+}
+.sggn image {
+  width: 140rpx;
+  height: 130rpx;
+}
+.rq {
+  position: relative;
+  top: -180rpx;
+  padding: 40rpx;
+}
+.dak {
+  font-size: 35rpx;
+  font-weight: 900;
+}
+
+.rq scroll-view {
+  margin-top: 30rpx;
+  white-space:nowrap;
+}
+.rq scroll-view view {
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.rq scroll-view image {
+  border-radius: 30rpx;
+  width: 600rpx;
+  height: 290rpx;
+}
+
+
+
+
+/*  */
+scroll-view {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
